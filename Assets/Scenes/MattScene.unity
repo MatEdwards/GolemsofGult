@@ -1146,10 +1146,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05555ddb082bb0b49ac7a35d11bd1641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 0.4
-  handRight: {fileID: 0}
-  handLeft: {fileID: 0}
-  handDefault: {fileID: 0}
+  ScreenScrollBorderSize: 50
+  RotateSpeed: 60
+  handRight: {fileID: 2800000, guid: 9aacb9f7d84cbe34e9ee32def3e9a3e2, type: 3}
+  handLeft: {fileID: 2800000, guid: 91215698aa4bc7442bed3a28f773e59a, type: 3}
+  handDefault: {fileID: 2800000, guid: 05b4be3fb2cdb174e878109681330419, type: 3}
 --- !u!1001 &692347754
 PrefabInstance:
   m_ObjectHideFlags: 0
