@@ -241,6 +241,10 @@ PrefabInstance:
       value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 756d99540142b5e4a8d174e18a6310d9, type: 3}
+      propertyPath: VelocityModule.orbitalY.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 756d99540142b5e4a8d174e18a6310d9, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 9.83
       objectReference: {fileID: 0}
