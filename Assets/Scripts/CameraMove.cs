@@ -7,7 +7,7 @@ using UnityEngine.Rendering;
 public class CameraMove : MonoBehaviour
 {
     private int edgeScrollSize = Screen.width / 50;
-    [SerializeField] private float rotateSpeed = 0.40f;
+    [SerializeField] private float rotateSpeed = 30f;
     private const float rotationLimit = 45;
     
     [SerializeField] private Texture2D handRight;
@@ -50,6 +50,6 @@ public class CameraMove : MonoBehaviour
             Cursor.SetCursor( handDefault, new Vector2(0,0), CursorMode.Auto);
         }
 
-        transform.eulerAngles += new Vector3(0, rotateDir * rotateSpeed, 0);
+        transform.eulerAngles += new Vector3(0, rotateDir * rotateSpeed * Time.deltaTime, 0);
     }
 }
