@@ -11,13 +11,12 @@ public class Draggable : MonoBehaviour
 {
     Rigidbody rb;
     private Vector3 startingPos; 
-    private float depth = 4;
+    private float depth = 4f;
 
     [SerializeField] private Texture2D handClosed;
     [SerializeField] private Texture2D handOver;
     [SerializeField] private Texture2D handDefault;
     
-    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -43,6 +42,7 @@ public class Draggable : MonoBehaviour
         Cursor.SetCursor( handClosed, new Vector2(handClosed.width / 2,handClosed.height / 2), CursorMode.Auto);
         rb.isKinematic = true;
     }
+
     private void OnMouseUp()
     {
         Cursor.SetCursor( handDefault, new Vector2(0,0), CursorMode.Auto);

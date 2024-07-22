@@ -23,8 +23,8 @@ public class CameraMove : MonoBehaviour
     void Update()
     {
         float rotateDir = 0f;
-        if (Input.mousePosition.x < EdgeScrollSize || Input.GetKey(KeyCode.A)) rotateDir = -1f;
-        if (Input.mousePosition.x > Screen.width - EdgeScrollSize || Input.GetKey(KeyCode.D)) rotateDir = +1f;
+        if ((Input.mousePosition.x < EdgeScrollSize && Input.mousePosition.y > 0 && Input.mousePosition.y < Screen.height) || Input.GetKey(KeyCode.A))               rotateDir = -1f;
+        if ((Input.mousePosition.x > Screen.width - EdgeScrollSize && Input.mousePosition.y > 0 && Input.mousePosition.y < Screen.height)|| Input.GetKey(KeyCode.D)) rotateDir = +1f;
         
         //Rotate stop points
         //var yRotation = transform.eulerAngles.y;
