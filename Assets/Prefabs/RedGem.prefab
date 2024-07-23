@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7153216600765125726}
   - component: {fileID: -8679017053945337800}
   - component: {fileID: 6643114172688198270}
+  - component: {fileID: 4793531852335617494}
   m_Layer: 0
   m_Name: RedGem
   m_TagString: Untagged
@@ -147,3 +148,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f423a3072b4f944974e9b1ee5ee4bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4793531852335617494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8595935968270408611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc62938247306594c9428756ae50b690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attribute: 00000000
